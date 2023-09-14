@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Persegi</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Kalkulator Matematik</h1>
+    </header>
+
+    <section class="lapisan1">
+      <h2 class="center-text">WELCOME TO KALKULATOR MATEMATIK</h2>
+      <p class="center-text">
+        Web Sederhana untuk menghitung Luas Persegi dan Keliling Persegi...
+      </p>
+      <section class="pilihan">
+        <a href="#content1"
+          ><button class="tombolpilihan">Luas Persegi</button></a
+        >
+        <a href="#content2"
+          ><button class="tombolpilihan">Keliling Persegi</button></a
+        >
+      </section>
+
+      <!-- LUAS PERSEGI -->
+
+      <div class="lapisan2">
+        <div id="content1" class="juduloperasi">
+          <h2>LUAS PERSEGI</h2>
+        </div>
+
+        <section class="lapisan3">
+          <img src="assets/persegi.jpg" alt="persegi" />
+          <section class="contentdalam">
+            <h6>
+              Rumus luas persegi yaitu: <br />
+              <span>L = S x S</span>
+            </h6>
+
+            <h6>Keterangan: <br />L = Luas<br />S = Sisi</h6>
+            <p id="luasText">
+              JADI KELILINGNYA ADALAH : <span id="luas"></span>
+            </p>
+
+            <!-- menghitung luas -->
+
+            <section id="inputSection">
+              <label for="inputField">Sisi Persegi</label>
+              <input type="number" id="inputField" placeholder="Masukan Sisi" />
+            </section>
+
+            <section class="inputButton">
+              <button id="hitungLuasButton" onclick="hitungLuas()">
+                Hitung
+              </button>
+              <button id="resetLuasButton" onclick="resetLuas()">Reset</button>
+            </section>
+          </section>
+        </section>
+      </div>
+      <!-- KELILING PERSEGI -->
+      <div class="lapisan2">
+        <div class="juduloperasi">
+          <h2 id="content2">KELILING PERSEGI</h2>
+        </div>
+
+        <section class="lapisan3">
+          <img src="assets/persegi.jpg" alt="persegi" />
+
+          <section class="contentdalam">
+            <h6>
+              Rumus Keliling persegi yaitu: <br />
+              <span>K = 4 x S</span>
+            </h6>
+
+            <h6>Keterangan: <br />K = Keliling<br />S = Sisi</h6>
+            <p id="kelilingText">
+              JADI KELILINGNYA ADALAH : <span id="keliling"></span>
+            </p>
+
+            <!-- menghitung keliling -->
+
+            <section id="inputSection2">
+              <label for="inputField2">Sisi Persegi</label>
+              <input
+                type="number"
+                id="inputField2"
+                placeholder="Masukan Sisi"
+              />
+            </section>
+
+            <section class="inputButton">
+              <button id="hitungKelilingButton" onclick="hitungKeliling()">
+                Hitung
+              </button>
+              <button id="resetKelilingButton" onclick="resetKeliling()">
+                Reset
+              </button>
+            </section>
+          </section>
+        </section>
+      </div>
+    </section>
+    <br /><br /><br /><br /><br /><br /><br />
+
+    <footer>
+      <h4>Created by ADIKA RAFIF</h4>
+    </footer>
+
+    <script src="JS/script.js"></script>
+  </body>
+</html>
